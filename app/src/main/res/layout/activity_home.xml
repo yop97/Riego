@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".Home">
+
+    <FrameLayout
+        android:layout_width="257dp"
+        android:layout_height="105dp"
+        android:background="#1C3AE1"
+        android:onClick="Suelo"
+        android:translationY="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3">
+
+        <TextView
+            android:id="@+id/texTempe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Suelo"
+            android:text="TEMPERATURA DEL SUELO"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/black"
+            android:textColorHint="@color/black"
+            android:textColorLink="@color/black"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:translationX="10dp"
+            android:translationY="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="260dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/Btem"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_dark"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="ON"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textSize="20sp"
+            android:translationX="50dp"
+            android:translationY="50dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="413dp"
+        android:layout_height="147dp"
+        android:background="@color/purple_700"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APP RIEGO"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:translationX="80sp"
+            android:translationY="40sp"
+            android:translationZ="2sp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BIENVENIDO"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:translationY="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:translationY="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="54dp"
+        android:layout_height="53dp"
+        android:onClick="Apagado"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_power_off" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="257dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="24dp"
+        android:background="#1C3AE1"
+        android:onClick="Riego"
+        android:translationY="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Riego"
+            android:text="DÍAS DE RIEGO"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:translationX="49dp"
+            android:translationY="15dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipDia"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="OFF"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="50dp"
+            android:translationY="50dp" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

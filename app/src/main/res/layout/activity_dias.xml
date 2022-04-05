@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:onClick="Atras"
+    tools:context=".Dias">
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="413dp"
+        android:layout_height="147dp"
+        android:background="@color/purple_700"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-2dp">
+
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Apagado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_power_off"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Atras"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DÍAS DE RIEGO"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:translationZ="2sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDH"
+        android:layout_width="89dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="262dp"
+        tools:layout_editor_absoluteY="362dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewVD"
+        android:layout_width="89dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <TextView
+        android:id="@+id/textViewDD"
+        android:layout_width="89dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="262dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <TextView
+        android:id="@+id/textViewVH"
+        android:layout_width="89dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+    <TextView
+        android:id="@+id/textViewSD"
+        android:layout_width="89dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <TextView
+        android:id="@+id/textViewSH"
+        android:layout_width="89dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+    <TextView
+        android:id="@+id/textViewJD"
+        android:layout_width="89dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="315dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <TextView
+        android:id="@+id/textViewJH"
+        android:layout_width="89dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="315dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <TextView
+        android:id="@+id/textViewXD"
+        android:layout_width="89dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <TextView
+        android:id="@+id/textViewXH"
+        android:layout_width="89dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <TextView
+        android:id="@+id/textViewMD"
+        android:layout_width="89dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <TextView
+        android:id="@+id/textViewMH"
+        android:layout_width="89dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <TextView
+        android:id="@+id/textViewLH"
+        android:layout_width="89dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <TextView
+        android:id="@+id/textViewLD"
+        android:layout_width="89dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="419dp"
+        android:layout_height="262dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/diasriego"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="45dp"
+        android:text="DÍA:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="195dp"
+        android:layout_marginTop="45dp"
+        android:text="ACTIVAR:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView35"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <Spinner
+        android:id="@+id/Dias"
+        android:layout_width="124dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="43dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView35"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <Spinner
+        android:id="@+id/Regar"
+        android:layout_width="86dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="43dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView37"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <Button
+        android:id="@+id/bHora"
+        android:layout_width="81dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="42dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="onClick"
+        android:text="HORA:"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="51dp"
+        android:text="TIEMPO(min):"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/eHora"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+    <EditText
+        android:id="@+id/eDuracion"
+        android:layout_width="70dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textView38"
+        app:layout_constraintTop_toBottomOf="@+id/Dias"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/eHora"
+        android:layout_width="80dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:onClick="OnClick"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/bHora"
+        app:layout_constraintTop_toBottomOf="@+id/Dias"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/bCambio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="?android:attr/colorEdgeEffect"
+        android:onClick="onClick"
+        android:text="MODIFICAR"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSD" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
